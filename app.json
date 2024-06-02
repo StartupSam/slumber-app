@@ -4,11 +4,14 @@
     "slug": "dozy_app",
     "owner": "startupsam",
     "privacy": "public",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "primaryColor": "#00818A",
     "version": "0.7.422",
     "orientation": "portrait",
-    "runtimeVersion":"1.0.0",
+    "runtimeVersion": "1.0.0",
     "icon": "./assets/images/appleIcon.png",
     "splash": {
       "image": "./assets/images/splashImage.png",
@@ -30,7 +33,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": false,
       "icon": "./assets/images/appleIcon.png",
@@ -102,7 +107,9 @@
       ],
       "sentry-expo",
       "@react-native-firebase/app",
-      "@react-native-firebase/crashlytics"
+      "@react-native-firebase/crashlytics",
+      "expo-font",
+      "expo-secure-store"
     ]
   }
 }
