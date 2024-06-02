@@ -33,9 +33,6 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
     "ios": {
       "supportsTablet": false,
       "icon": "./assets/images/appleIcon.png",
@@ -109,7 +106,8 @@
       "@react-native-firebase/app",
       "@react-native-firebase/crashlytics",
       "expo-font",
-      "expo-secure-store"
+      "expo-secure-store",
+      "expo-asset"
     ]
   }
 }
