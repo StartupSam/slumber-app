@@ -32,7 +32,7 @@
   },
   "resolutions": {
     "@types/react": "~17.0.21",
-    "expo-av": "11.2",
+    "expo-av": "14.0.5",
     "electron": "^11.0.1"
   },
   "dependencies": {
