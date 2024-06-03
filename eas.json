@@ -3,7 +3,7 @@
     "base": {
       "ios": {
         "image": "latest",
-        "cocoapods": "1.10.2"
+        "cocoapods": "1.14.0"
       }
     },
     "special:": {
