@@ -1,5 +1,5 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "index.js",
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
@@ -54,7 +54,7 @@
     "@react-navigation/material-top-tabs": "^6.6.3",
     "@react-navigation/native": "^6.1.7",
     "@react-navigation/stack": "^6.3.17",
-    "@sentry/react-native": "~5.22.0",
+    "@sentry/react-native": "^5.22.3",
     "@types/react": "~18.2.45",
     "@types/react-dom": "~18.2.25",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
