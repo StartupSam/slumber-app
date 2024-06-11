@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>713165282203-0cflitrcg3jbp4mttblvulaga5ndnnj6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.713165282203-0cflitrcg3jbp4mttblvulaga5ndnnj6</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>713165282203-15rbcpiu517fikvak6c9okehpusbk84e.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAmH76fHKqccQT5bH_gyfKxWssjEr0KH_o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>713165282203</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dozyhealth.dozy</string>
+	<key>PROJECT_ID</key>
+	<string>slumber-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>slumber-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:713165282203:ios:b8e19bae56e2cd985bdf3e</string>
+	<key>DATABASE_URL</key>
+	<string>https://slumber-app.firebaseio.com</string>
+</dict>
+</plist>

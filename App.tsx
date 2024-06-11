@@ -2,8 +2,8 @@
 import React from 'react';
 import { Provider as ThemeProvider } from '@draftbit/ui';
 import * as Icon from '@expo/vector-icons';
-import * as Sentry from 'sentry-expo';
-import { SENTRY_DSN } from '@env';
+// import * as Sentry from 'sentry-expo';
+// import { SENTRY_DSN } from '@env';
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font';
 import { LogBox, StatusBar, Text, UIManager, Platform } from 'react-native';
@@ -24,12 +24,12 @@ console.warn = (message: string): void => {
   }
 };
 
-// Sentry Initialization
-Sentry.init({
-  dsn: SENTRY_DSN,
-  enableInExpoDevelopment: true,
-  debug: __DEV__ ? true : false,
-});
+// // Sentry Initialization
+// Sentry.init({
+//   dsn: SENTRY_DSN,
+//   enableInExpoDevelopment: true,
+//   debug: __DEV__ ? true : false,
+// });
 
 // Disable font scaling app-wide, enable on things it doesn't break
 // Hmm - this code throws TS undefined errors, but works. Not sure why.

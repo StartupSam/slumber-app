@@ -41,12 +41,12 @@ const DiaryEntryNavigator = () => {
               title: screen,
               // Use a custom header component with a progressbar
               // eslint-disable-next-line react/display-name
-              header: ({ scene, navigation }) => {
+              header: ({ route, navigation }) => {
                 return (
                   <HeaderProgressBar
                     progressBarPercent={
-                      scene.route.params !== undefined
-                        ? scene.route.params.progressBarPercent
+                      route.params !== undefined
+                        ? route.params.progressBarPercent
                         : null
                     }
                     navigation={navigation}

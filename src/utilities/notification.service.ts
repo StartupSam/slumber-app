@@ -61,9 +61,9 @@ export default class Notification {
               notificationEnabledRef.current = newNotificationEnabled;
             }
           }
-        };
+        } ;
 
-        AppState.addEventListener('change', handleAppStateChange);
+        const subscription = AppState.addEventListener('change', handleAppStateChange);
 
         notificationResponseListener.current =
           Notifications.addNotificationResponseReceivedListener(
@@ -71,19 +71,20 @@ export default class Notification {
           );
 
         return () => {
-          AppState.removeEventListener('change', handleAppStateChange);
-          if (notificationReceivedListener.current) {
-            Notifications.removeNotificationSubscription(
-              notificationReceivedListener.current,
-            );
-            notificationReceivedListener.current = null;
-          }
-          if (notificationResponseListener.current) {
-            Notifications.removeNotificationSubscription(
-              notificationResponseListener.current,
-            );
-            notificationResponseListener.current = null;
-          }
+          subscription.remove()
+          // AppState.removeEventListener('change', handleAppStateChange);
+          // if (notificationReceivedListener.current) {
+          //   Notifications.removeNotificationSubscription(
+          //     notificationReceivedListener.current,
+          //   );
+          //   notificationReceivedListener.current = null;
+          // }
+          // if (notificationResponseListener.current) {
+          //   Notifications.removeNotificationSubscription(
+          //     notificationResponseListener.current,
+          //   );
+          //   notificationResponseListener.current = null;
+          // }
         };
       }
     }, [userId]);

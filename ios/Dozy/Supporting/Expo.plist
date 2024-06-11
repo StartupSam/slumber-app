@@ -5,14 +5,11 @@
     <key>EXUpdatesCheckOnLaunch</key>
     <string>ALWAYS</string>
     <key>EXUpdatesEnabled</key>
-    <true/>
+    <false/>
     <key>EXUpdatesLaunchWaitMs</key>
     <integer>0</integer>
     <key>EXUpdatesReleaseChannel</key>
     <string>prod-0</string>
-    <key>EXUpdatesSDKVersion</key>
-    <string>45.0.0</string>
-    <key>EXUpdatesURL</key>
-    <string>https://exp.host/@startupsam/dozy_app</string>
+
   </dict>
 </plist>

@@ -4,35 +4,28 @@
     "slug": "dozy_app",
     "owner": "startupsam",
     "privacy": "public",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "primaryColor": "#00818A",
-    "version": "0.7.420",
+    "version": "0.7.422",
     "orientation": "portrait",
+    "runtimeVersion": "1.0.0",
     "icon": "./assets/images/appleIcon.png",
     "splash": {
       "image": "./assets/images/splashImage.png",
       "resizeMode": "contain",
       "backgroundColor": "#232B3F"
     },
-    "hooks": {
-      "postPublish": [
-        {
-          "file": "sentry-expo/upload-sourcemaps",
-          "config": {
-            "organization": "dozy",
-            "project": "dozy-mobile",
-            "authToken": "82be5876abc44092911beeb02882b1e6856354397950480ebfcd36034ac539f9"
-          }
-        }
-      ]
-    },
+
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": false,
       "icon": "./assets/images/appleIcon.png",
+      "googleServicesFile": "./GoogleService-Info.plist",
       "bundleIdentifier": "com.dozyhealth.dozy",
       "buildNumber": "435",
       "config": {
@@ -44,6 +37,10 @@
     "android": {
       "package": "com.dozyhealth.dozy",
       "icon": "./assets/images/appleIcon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/appleIcon.png",
+        "backgroundColor": "#232B3F"
+      },
       "versionCode": 435,
       "config": {
         "googleSignIn": {
@@ -94,7 +91,11 @@
           "color": "#00818A"
         }
       ],
-      "sentry-expo"
+      "@react-native-firebase/app",
+      "@react-native-firebase/crashlytics",
+      "expo-font",
+      "expo-secure-store",
+      "expo-asset"
     ]
   }
 }

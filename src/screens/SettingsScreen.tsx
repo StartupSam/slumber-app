@@ -179,7 +179,7 @@ export function SettingsScreen() {
       if (dailyLogNotificationDocs.docs.length) {
         const latestNotificationDoc =
           dailyLogNotificationDocs.docs[
-            dailyLogNotificationDocs.docs.length - 1
+          dailyLogNotificationDocs.docs.length - 1
           ];
         logReminderIdRef.current = latestNotificationDoc.id;
         latestNotificationDoc.ref.onSnapshot((notif) => {
@@ -253,16 +253,16 @@ export function SettingsScreen() {
       <ScrollView contentContainerStyle={styles.scrollViewContent}>
         <TouchableOpacity
           onPress={() => {
-            if (!state.profileData.name) {
-              const newProfileData = state.profileData;
-              newProfileData.name = displayName || 'Temp Name';
-              SecureStore.setItemAsync(
-                'profileData',
-                JSON.stringify(newProfileData),
-              );
-            }
+            // if (!state.profileData.name) {
+            //   const newProfileData = state.profileData;
+            //   newProfileData.name = displayName || 'Temp Name';
+            //   SecureStore.setItemAsync(
+            //     'profileData',
+            //     JSON.stringify(newProfileData),
+            //   );
+            // }
           }}
-          disabled={state.profileData.name || Platform.OS === 'android'}
+        // disabled={state.profileData.name || Platform.OS === 'android'}
         >
           <Container
             style={styles.Container_nz}
@@ -299,6 +299,9 @@ export function SettingsScreen() {
             </Text>
           </Container>
         </TouchableOpacity>
+
+
+
         <Container
           style={styles.optionsWrapper}
           elevation={0}
@@ -429,6 +432,7 @@ export function SettingsScreen() {
             </Container>
           </Touchable>
         </Container>
+
       </ScrollView>
     </ScreenContainer>
   );

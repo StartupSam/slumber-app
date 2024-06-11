@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppState, AppStateStatus } from 'react-native';
-import * as ExpoUpdates from 'expo-updates';
+// import * as ExpoUpdates from 'expo-updates';
 
 type SetCheckingUpdateStateFunc = (isChecking: boolean) => void;
 
@@ -22,10 +22,11 @@ export default class Updates {
           Updates.checkForUpdate(setCheckingUpdate);
         }
       };
-      AppState.addEventListener('change', handleAppStateChange);
+      const subscribe = AppState.addEventListener('change', handleAppStateChange);
 
       return () => {
-        AppState.removeEventListener('change', handleAppStateChange);
+        subscribe.remove()
+        // AppState.removeEventListener('change', handleAppStateChange);
       };
     }, []);
 
@@ -39,22 +40,22 @@ export default class Updates {
       return;
     }
 
-    try {
-      const update = await ExpoUpdates.checkForUpdateAsync();
-      if (update.isAvailable) {
-        updateState(true);
+    // try {
+    //   const update = await ExpoUpdates.checkForUpdateAsync();
+    //   if (update.isAvailable) {
+    //     updateState(true);
 
-        await ExpoUpdates.fetchUpdateAsync();
-        await ExpoUpdates.reloadAsync();
+    //     await ExpoUpdates.fetchUpdateAsync();
+    //     await ExpoUpdates.reloadAsync();
 
-        return;
-      }
-    } catch (error) {
-      if (__DEV__) {
-        console.log('Updates error: ', error);
-      }
+    //     return;
+    //   }
+    // } catch (error) {
+    //   if (__DEV__) {
+    //     console.log('Updates error: ', error);
+    //   }
     }
 
-    updateState(false);
-  }
+    // updateState(false);
+  // }
 }

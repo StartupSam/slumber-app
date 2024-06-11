@@ -2,8 +2,8 @@
   "build": {
     "base": {
       "ios": {
-        "image": "macos-big-sur-11.4-xcode-13.0",
-        "cocoapods": "1.10.2"
+        "image": "latest",
+        "cocoapods": "1.14.0"
       }
     },
     "special:": {

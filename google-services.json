@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "713165282203",
+    "firebase_url": "https://slumber-app.firebaseio.com",
+    "project_id": "slumber-app",
+    "storage_bucket": "slumber-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713165282203:android:e5d129ed1857441d5bdf3e",
+        "android_client_info": {
+          "package_name": "com.dozyhealth.dozy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713165282203-jhi4ae219n6mebdl7tl6r7eas18cfu8j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dozyhealth.dozy",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "713165282203-vhsnv4ghgloa2kbn3vkucor8sn25asva.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dozyhealth.dozy",
+            "certificate_hash": "d83e70ee220f023a6b0e6e1d29a6ab804a701d60"
+          }
+        },
+        {
+          "client_id": "713165282203-jjc54if1n7krahda9gvkio0siqltq57t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcOD4KTAkB5ES6txe9BRi0N8SJtJjkQpo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713165282203-jjc54if1n7krahda9gvkio0siqltq57t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "713165282203-0cflitrcg3jbp4mttblvulaga5ndnnj6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dozyhealth.dozy"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

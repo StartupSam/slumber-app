@@ -1,5 +1,5 @@
 /** ---------- Module delcarations ------------- */
 
-declare module '@env' {
-  export const SENTRY_DSN: string;
-}
+// declare module '@env' {
+//   export const SENTRY_DSN: string;
+// }
